@@ -10,6 +10,8 @@
   --label-color: #282c52;
   --font-color: #0000;
   --highlight-background: #f8f8fb;
+  --deafault-background: #fff;
+  --input-font-size: 0.875rem;
 }
 
 * {
@@ -39,6 +41,14 @@ body {
 #sign-in__page form {
   width: calc(100vw - var(--left-column-width));
   background-color: var(--highlight-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-in__page form > div {
+  width: 22.375rem;
 }
 
 .rocket {
@@ -78,4 +88,48 @@ form .header {
 .header h2 {
   color: var(--label-color);
   font-size: 1.375rem;
+}
+
+.form-control__group {
+  margin-top: 2rem;
+}
+
+label {
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+label,
+input::placeholder {
+  font-size: var(--input-font-size);
+}
+
+.input-group {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  background-color: var(--deafault-background);
+}
+
+.input-group input {
+  border: none;
+  height: 100%;
+  flex: 1;
+  padding: 0.8rem;
+}
+
+.input-group input:is(:active, :focus, :focus-visible) {
+  border-color: var(--primary-color);
+}
+
+.input-group input::placeholder {
+  color: var(--placeholder-color);
+}
+
+.input-group img {
+  width: 3.5rem;
+  height: 100%;
+  padding: 1rem;
+  object-fit: contain;
 }
