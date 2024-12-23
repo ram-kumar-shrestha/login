@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:wght@400;600;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Doto:wght@100..900&family=Inter:wght@400;600;800&family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  --left-column-width: 52rem;
+
+  --primary-color: #235c9b;
+  --secondary-color: #d4d8ff;
+  --placeholder-color: #6b72b6;
+  --label-color: #282c52;
+  --font-color: #0000;
+  --highlight-background: #f8f8fb;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alata", "sans-serif";
+}
+
+#sign-in__page {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+
+#sign-in__page section:first-child {
+  width: var(--left-column-width);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#sign-in__page form {
+  width: calc(100vw - var(--left-column-width));
+  background-color: var(--highlight-background);
+}
+
+.rocket {
+  width: 28rem;
+  height: 31rem;
+}
+
+#slogan {
+  font-family: "Poppins", "sans-serif";
+  font-size: 1.5rem;
+}
+
+.slogan-desc {
+  font-size: 1.125rem;
+}
+
+.slogan-desc,
+#slogan {
+  font-weight: 500;
+}
+
+form {
+  padding: 2rem;
+}
+
+form .header {
+  display: flex;
+  align-items: center;
+  gap: 1.8rem;
+}
+
+.header img {
+  width: 3.8rem;
+  height: 4rem;
+}
+
+.header h2 {
+  color: var(--label-color);
+  font-size: 1.375rem;
+}
