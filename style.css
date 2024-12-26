@@ -282,3 +282,9 @@ button:not([type="submit"]) {
   gap: 0.5rem;
   background-color: var(--secondary-color);
 }
+
+@media (max-width: 768px) {
+  * {
+    font-size: 10px;
+  }
+}
