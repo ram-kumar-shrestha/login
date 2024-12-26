@@ -29,9 +29,56 @@
           <label for="email">Email</label>
           <div class="input-group">
             <img src="assets/email.png" alt="Email icon" />
-            <input type="email" placeholder="Enter your email" id="email" />
+            <input
+              type="email"
+              placeholder="Enter your email"
+              id="email"
+              required
+            />
           </div>
         </div>
+        <div class="form-control__group">
+          <label for="password" id="password-label"
+            >Password <span><a href="#">Forgot Password?</a></span></label
+          >
+          <div class="input-group">
+            <img src="assets/password.png" alt="password icon" />
+            <input
+              type="password"
+              placeholder="Enter your password"
+              id="password"
+              required
+            />
+          </div>
+        </div>
+        <div class="form-control__group">
+          <label for="captcha">Enter Captcha </label>
+          <div class="input-group captcha-group">
+            <div class="captcha-img">
+              <img src="assets/captcha.png" alt="captach icon" />
+              <img src="assets/refresh.png" alt="refresh icon" />
+            </div>
+            <input type="text" id="captcha" />
+          </div>
+        </div>
+
+        <div class="form-control__group remember-me">
+          <input type="checkbox" id="remember-me" />
+          <label for="remember-me">Remember me</label>
+        </div>
+
+        <button type="submit">Sign in</button>
+
+        <div class="form-control__group sign-up">
+          <p>Don't have an account?</p>
+          <a href="#">Sign up</a>
+        </div>
+
+        <p class="separator">or</p>
+
+        <button>
+          Continue with google <img src="assets/Google.png" alt="google" />
+        </button>
       </form>
     </main>
   </body>
